@@ -13,7 +13,7 @@ CREATE TABLE rawintraday (
     High DECIMAL(10, 2),
     Low DECIMAL(10, 2),
     Close DECIMAL(10, 2),
-    Volume INT
+    Volume BIGINT UNSIGNED
 );
 CREATE TABLE rawdaily (
     Id INT PRIMARY KEY auto_increment,
@@ -23,7 +23,7 @@ CREATE TABLE rawdaily (
     High DECIMAL(10, 2),
     Low DECIMAL(10, 2),
     Close DECIMAL(10, 2),
-    Volume INT
+    Volume BIGINT UNSIGNED
 );
 CREATE TABLE rawweekly (
     Id INT PRIMARY KEY auto_increment,
@@ -33,7 +33,7 @@ CREATE TABLE rawweekly (
     High DECIMAL(10, 2),
     Low DECIMAL(10, 2),
     Close DECIMAL(10, 2),
-    Volume INT
+    Volume BIGINT UNSIGNED
 );
 CREATE TABLE rawmonthly (
     Id INT PRIMARY KEY auto_increment,
@@ -43,5 +43,5 @@ CREATE TABLE rawmonthly (
     High DECIMAL(10, 2),
     Low DECIMAL(10, 2),
     Close DECIMAL(10, 2),
-    Volume INT
+    Volume BIGINT UNSIGNED
 );
